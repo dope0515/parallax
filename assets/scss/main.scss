@@ -10,5 +10,15 @@
 @import 'main/visual';
 
 section {
-    height: 100vh;
+    // min-height: 100vh;
+}
+
+.img-list {
+    &.type01 {
+        ul {
+            display: flex;
+            align-items: center;
+            // height: 100vh;
+        }
+    }
 }
