@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax.js</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<main>
+    <section>
+        <div class="img-list">
+            <ul>
+                <li>
+                    <div class="img-bx">
+                        <img class="thumbnail-transition" src="assets/images/main/sec01.jpg" alt="바다">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="img-list">
+            <ul>
+                <li>
+                    <div class="img-bx">
+                        <img class="thumbnail-transition" src="assets/images/main/sec02.jpg" alt="산">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+<!--parallax.js-->
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+<script>
+    var image = document.getElementsByClassName('thumbnail-transition');
+    new simpleParallax(image, {
+        delay: .6,
+        transition: 'cubic-bezier(0,0,0,1)'
+    });
+</script>
+</body>
+</html>
